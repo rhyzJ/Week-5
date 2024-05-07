@@ -78,6 +78,8 @@ for (let food of someFoods) {
 
 const value = prompt("Please type in your age");
 
+console.log("Exercise 6");
+
 if (value >= 18) {
   //greater than or equal to
   console.log("You can vote!");
@@ -85,4 +87,3 @@ if (value >= 18) {
   console.log("No voting for you :(");
 }
 
-//practicing git push
