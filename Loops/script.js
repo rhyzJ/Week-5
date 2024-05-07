@@ -76,13 +76,20 @@ for (let food of someFoods) {
 
 //prompt returns a string, even if you enter another data type
 
-const value = prompt("Please type in your age");
+// Exercise 6
 
-console.log("Exercise 6");
+// parseInt(prompt("string"))
+// parseInt = Integer, makes it a number
 
-if (value >= 18) {
-  //greater than or equal to
-  console.log("You can vote!");
+console.log("-----Exercise 6-----");
+
+const age = parseInt(prompt("Enter your age"));
+console.log(typeof age);
+
+if (isNaN(age)) {
+  console.log("Please enter a number!");
+} else if (parseInt(age) >= 18) {
+  console.log("You CAN vote!");
 } else {
   console.log("No voting for you :(");
 }
