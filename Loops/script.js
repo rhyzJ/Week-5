@@ -83,14 +83,43 @@ for (let food of someFoods) {
 
 console.log("-----Exercise 6-----");
 
-const age = parseInt(prompt("Enter your age"));
-console.log(typeof age);
+//const age = parseInt(prompt("Enter your age"));
+// console.log(typeof age);
 
-if (isNaN(age)) {
-  console.log("Please enter a number!");
-} else if (parseInt(age) >= 18) {
-  console.log("You CAN vote!");
-} else {
-  console.log("No voting for you :(");
+// if (isNaN(age)) {
+//   console.log("Please enter a number!");
+// } else if (parseInt(age) >= 18) {
+//   console.log("You CAN vote!");
+// } else {
+//   console.log("No voting for you :(");
+// }
+
+// while loops
+//take a guess game
+
+let guess;
+const secretNumber = 3;
+while (guess != secretNumber) {
+  guess = prompt("What's your guess!");
+  console.log(`You guessed ${guess}`);
+  if (guess == secretNumber) console.log("You guessed correct!");
 }
 
+// Breaks and Continuations
+
+//breaks in while loops
+
+let x = 0;
+while (true) {
+  if(x===3){
+    console.log("x is now 3");
+  }
+  if (x === 10){
+    console.log("x is now 10");
+  }
+  if (x===15){
+    console.log("x is now 15");
+    break;
+  }
+  x++;
+}
