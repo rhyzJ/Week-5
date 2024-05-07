@@ -97,13 +97,13 @@ console.log("-----Exercise 6-----");
 // while loops
 //take a guess game
 
-let guess;
-const secretNumber = 3;
-while (guess != secretNumber) {
-  guess = prompt("What's your guess!");
-  console.log(`You guessed ${guess}`);
-  if (guess == secretNumber) console.log("You guessed correct!");
-}
+// let guess;
+// const secretNumber = 3;
+// while (guess != secretNumber) {
+//   guess = prompt("What's your guess!");
+//   console.log(`You guessed ${guess}`);
+//   if (guess == secretNumber) console.log("You guessed correct!");
+// }
 
 // Breaks and Continuations
 
@@ -111,15 +111,64 @@ while (guess != secretNumber) {
 
 let x = 0;
 while (true) {
-  if(x===3){
+  if (x === 3) {
     console.log("x is now 3");
   }
-  if (x === 10){
+  if (x === 10) {
     console.log("x is now 10");
   }
-  if (x===15){
+  if (x === 15) {
     console.log("x is now 15");
     break;
   }
   x++;
+}
+
+// Exercise 7
+
+console.log("-----Exercise 7-----");
+const string = "Hell@ the#e";
+
+// index stating at 0, when i is less then length of string, incrememnt by 1
+// if string[i] equal to "symbol" OR string[i] equal to "symbol" (continued to include all symbols), then console.log error message and BREAK out of loop.
+for (let i = 0; i < string.length; i++) {
+  console.log(string[i]);
+  if (
+    string[i] == "@" ||
+    string[i] == "!" ||
+    string[i] == "#" ||
+    string[i] == "$"
+  ) {
+    console.log("ERROR!");
+    break;
+  }
+}
+
+// for in loop = iterates over the properties of an object
+
+console.log("For In Loops--------------");
+
+const student = {
+  name: "Rob",
+  age: 5,
+  isAdmin: true,
+};
+
+for (const key in student) {
+  console.log(key);
+}
+console.log(student.name);
+console.log(student["name"]);
+
+//Exercise 9
+
+const user = {
+  name: "John",
+  age: 50,
+  isAdmin: true,
+};
+
+for (const key in user) {
+  console.log(user["age"]);
+  break;
 }
