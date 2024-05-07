@@ -169,6 +169,9 @@ const user = {
 };
 
 for (const key in user) {
-  console.log(user["age"]);
-  break;
+  if (key === "age") {
+    console.log(user["age"]);
+    break;
+  }
+  console.log(key);
 }
