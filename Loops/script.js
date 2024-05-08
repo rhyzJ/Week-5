@@ -184,7 +184,7 @@ const myFavNumbers = {
   third: 14,
 };
 
-let total = 0 ; //defining total as a number
+let total = 0; //defining total as a number
 
 for (let key in myFavNumbers) {
   total += myFavNumbers[key];
