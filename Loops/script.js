@@ -154,6 +154,7 @@ const student = {
   isAdmin: true,
 };
 
+// loop (const variable in object)
 for (const key in student) {
   console.log(key);
 }
