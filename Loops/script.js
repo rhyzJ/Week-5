@@ -175,3 +175,22 @@ for (const key in user) {
   }
   console.log(key);
 }
+
+//Bonus Exercise 10
+
+const myFavNumbers = {
+  first: 7,
+  second: 25,
+  third: 14,
+};
+
+let total = 0 ; //defining total as a number
+
+for (let key in myFavNumbers) {
+  total += myFavNumbers[key];
+}
+
+// += adds the variable/property on the left to the value on the right
+//shorthand: a += b ... a = a + b
+
+console.log(`sum of all my favourite numbers is ${total}`);
